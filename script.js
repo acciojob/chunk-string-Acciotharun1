@@ -2,13 +2,14 @@ function stringChop(str, size) {
   // your code here
 	chunkedarr=[];
     let l=str.length;
-    if(str=="" || str==null){
+    if(!str){
         return chunkedarr;
     }
         for(let i=0;i<l;i+=size){
             chunkedarr.push(str.slice(i,i+size));
         }
-    
+
+	
     return chunkedarr;
 }
 
